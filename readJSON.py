@@ -76,18 +76,22 @@ with open(dump_path,'w') as sampledfile:
                             citation_page=0
                         if 'facebook' in data['counts'] and 'unique_users_count' in data['counts']['facebook']:
                             facebook_users=data['counts']['facebook']['unique_users_count']
+                            count+=1
                         else:
                             facebook_users=0
                         if 'facebook' in data['counts'] and 'posts_count' in data['counts']['facebook']:
                             facebook_posts=data['counts']['facebook']['posts_count']
+                            count+=1
                         else:
                             facebook_posts=0
                         if 'twitter' in data['counts'] and 'unique_users_count' in data['counts']['twitter']:
                             twitter_users=data['counts']['twitter']['unique_users_count']
+                            count+=1
                         else:
                             twitter_users=0
                         if 'twitter' in data['counts'] and 'posts_count' in data['counts']['twitter']:
                             twitter_posts=data['counts']['twitter']['posts_count']
+                            count+=1
                         else:
                             twitter_posts=0
                         altmetric_score=data['altmetric_score']['score']
